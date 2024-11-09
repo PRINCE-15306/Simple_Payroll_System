@@ -101,12 +101,12 @@ void generatePaySlip(int empID) {
     printf("+---------------------------------------+\n");
     printf("|          Monthly Pay Slip             |\n");
     printf("+---------------------------------------+\n");
-    printf("| Employee ID   ----> %d\n", emp.id);
-    printf("| Employee Name ----> %s\n", emp.name);
-    printf("| Hours Worked  ----> %.2f\n", emp.hours_worked);
-    printf("| Hourly Rate   ----> %.2f\n", emp.hourly_rate);
-    printf("| Net Salary    ----> %.2f\n", emp.net_salary);
-    printf("| Date Added    ----> %s\n", emp.date_added);
+    printf("  Employee ID   ----> %d\n", emp.id);
+    printf("  Employee Name ----> %s\n", emp.name);
+    printf("  Hours Worked  ----> %.2f\n", emp.hours_worked);
+    printf("  Hourly Rate   ----> %.2f\n", emp.hourly_rate);
+    printf("  Net Salary    ----> %.2f\n", emp.net_salary);
+    printf("  Date Added    ----> %s\n", emp.date_added);
     printf("+--------------------------------------+\n");
 
     char filename[100];
@@ -117,12 +117,12 @@ void generatePaySlip(int empID) {
         fprintf(paySlipFile, "+----------------------------------------+\n");
         fprintf(paySlipFile, "|          Monthly Pay Slip              |\n");
         fprintf(paySlipFile, "+----------------------------------------+\n");
-        fprintf(paySlipFile, "| Employee ID   ----> %d\n", emp.id);
-        fprintf(paySlipFile, "| Employee Name ----> %s\n", emp.name);
-        fprintf(paySlipFile, "| Hours Worked  ----> %.2f\n", emp.hours_worked);
-        fprintf(paySlipFile, "| Hourly Rate   ----> %.2f\n", emp.hourly_rate);
-        fprintf(paySlipFile, "| Net Salary    ----> %.2f\n", emp.net_salary);
-        fprintf(paySlipFile, "| Date Added    ----> %s\n", emp.date_added);
+        fprintf(paySlipFile, "  Employee ID   ----> %d\n", emp.id);
+        fprintf(paySlipFile, "  Employee Name ----> %s\n", emp.name);
+        fprintf(paySlipFile, "  Hours Worked  ----> %.2f\n", emp.hours_worked);
+        fprintf(paySlipFile, "  Hourly Rate   ----> %.2f\n", emp.hourly_rate);
+        fprintf(paySlipFile, "  Net Salary    ----> %.2f\n", emp.net_salary);
+        fprintf(paySlipFile, "  Date Added    ----> %s\n", emp.date_added);
         fprintf(paySlipFile, "+----------------------------------------+\n");
         fclose(paySlipFile);
         printf("Pay slip saved to %s\n", filename);
