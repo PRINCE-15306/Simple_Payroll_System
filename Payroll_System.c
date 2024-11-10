@@ -12,7 +12,7 @@ struct Employee {
     char date_added[25];
 };
 
-float calculateGrossSalary(float hours_worked, float hourly_rate) {
+float calculateNetSalary(float hours_worked, float hourly_rate) {
     return hourly_rate * hours_worked;
 }
 
@@ -46,7 +46,7 @@ void addEmployee() {
     printf("Enter Hourly Rate: ");
     scanf("%f", &emp.hourly_rate);
 
-    emp.net_salary = calculateGrossSalary(emp.hours_worked, emp.hourly_rate);
+    emp.net_salary = calculateNetSalary(emp.hours_worked, emp.hourly_rate);
 
     getCurrentDate(emp.date_added);
 
