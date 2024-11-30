@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Employee {
-int id;
-char name[50];
-float basic_salary;
+struct Employee 
+{
+ int id;
+ char name[50];
+ float basic_salary;
  float allowances;
-float deductions;
-float gross_salary;
- };
+ float deductions;
+ float gross_salary;
+};
 
 float calculateGrossSalary(float basic, float allowances, float deductions) {
  return basic + allowances - deductions;
